@@ -1,0 +1,373 @@
+
+
+/*--------------   BASE STYLES ------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  THINGS THAT APPLY UNIVERSALLY TO ALL DEVICES  */
+body {
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 16px;
+    color: #fcfcfc;
+    background-color: #653BA8;
+}
+
+a:link {
+    color: #fcfcfc;
+}
+
+a:active {
+    color: #A989E0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+h2 {
+    /*font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 15px 15px;
+}
+
+h3 {
+    /*font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 1.375em;
+    font-weight: 700;
+    padding: 25px 10px;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.hero span {
+    color:#653BA8;
+}
+
+.hero p {
+    font-weight: bolder;
+}
+
+.location p {
+    line-height: 1.75em;
+}
+
+.copyright {
+    font-size: 0.875em;
+}
+
+footer span.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.25em;
+    font-weight: normal;
+    color: #D0B9F7;
+}
+
+.fas, 
+.fab {
+    color: #D0B9F7;
+}
+
+/*--------------   MOBILE STYLES ------------------*/
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 15px;
+    z-index: 2;
+    background-color: #653BA8;
+    width: 100%;
+}
+
+.header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.25em;
+    font-weight: normal;
+    color: #d0b9f7;
+    width: 100%;
+    text-align: center;
+}
+
+.header nav {
+    width: 100%;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header nav ul li {
+    list-style: none;
+    line-height: 1.75em;
+    color: #fcfcfc; 
+}
+
+.filler {
+    background-color: #653BA8;
+    height: 150px;
+}
+
+.hero {
+    background-image: url("../img/pineapple-supply-co-n_CvvktBf-Q-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 395px;
+    padding: 15px;
+    text-align: center;
+}
+
+.hero h1 {
+    /*font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    padding: 140px 10px 0px 10px;
+}
+
+.work {
+    background-color: #D0B9F7;
+    padding: 15px 0;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.work h2 {
+    text-align: center;
+    color: #653ba8;
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    color: #36048c;
+    margin: 25px;
+    border: 3px solid #653BA8;
+    border-radius: 8px;
+    box-shadow: 5px 5px #653BA8;
+    background-color: #fcfcfc;
+}
+
+.portfolio p {
+    padding: 0px 15px 15px;
+}
+
+.about {
+    background-color: #A989E0;
+    padding: 15px;
+    text-align: center;
+    color: #36048c;
+}
+
+.about h2 {
+    padding-bottom: 10px;
+}
+
+.photo img {
+width: 50%;
+border-radius: 15px;
+opacity: 60%;
+}
+
+.contact {
+    padding: 15px;
+    text-align: center;
+}
+
+.hire, 
+.social, 
+.location {
+    width: 80%;
+    border: 1px solid #A989E0;
+    border-radius: 8px;
+    margin: 15px auto;
+    padding-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-shadow: 0 0px 5px #36048c;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+/*--------------   TABLET STYLES ------------------*/
+@media only screen and (min-width: 768px) {
+    
+    .header {
+        flex-flow: row nowrap;
+    }
+
+    .header nav ul {
+        flex-flow: row nowrap;
+    }
+
+    .hero h1 {
+        padding: 245px 10px 5px 0px;
+        margin: auto;
+    }
+
+    .hero p {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    .work img {
+        width: 75%;
+    }
+
+    .portfolio {
+        margin: 25px 65px;
+    }
+
+    .portfolio p {
+        padding: 0px 85px 15px;
+    }
+
+    .about {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 20px
+    }
+    
+    .about h3 {
+        padding: 0px 0px 5px;
+    }
+
+    .about h2 {
+        width: 75%;
+        text-align: left;
+    }
+
+    .about .photo {
+        width: 37%;
+    }
+
+    .about .photo img {
+        width: 60%;
+    }
+
+    .about .about-me {
+        width: 53%;
+        text-align: left;
+    }
+
+}
+
+
+/*--------------   DESKTOP STYLES ------------------*/
+@media only screen and (min-width: 1200px){
+
+    a:hover {
+        color:#D0B9F7;
+    }  
+    /*hover must come after link and active to be effective!  It only applies to non-touch-screen devices */
+
+    .grow {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .grow:hover {
+        transform: scale(1.08);
+    }
+
+    .hero h1 {
+    padding: 200px 10px 5px 0px;
+    }
+
+    .hero p {
+        font-size: 1.25em;
+        padding-top: 10px;
+        width: 40%;
+    }
+
+    .work {
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .work h2 {
+        width: 100%;
+    }
+
+    .work h4 {
+        padding: 0 20px;
+    }
+
+    .work img {
+        height: 300px;
+    }
+
+    .portfolio {
+        width: 28%;
+        margin: auto;
+        height: 600px;
+        justify-content: space-around;
+    }
+
+    .portfolio p {
+        padding: 0 60px 15px;
+    }
+
+    .contact {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .contact h2 {
+        width: 100%;
+    }
+
+    .hire, .social, .location {
+        width: 30%;
+        height: 185px;
+    }
+
+}
