@@ -3,7 +3,7 @@
     <head>
         <meta charset = 'UTF-8'/>
         <!--Meta Tag - This tag allows elements and fonts to scale on mobile devices-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Font Links--> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -14,11 +14,12 @@
         <title>devByBrenda</title>
         <link rel='stylesheet' href='css/main.css'>
         <link rel='stylesheet' href='css/normalize.css'>
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <section id='header'>
             <div class='section header'>
-                <h1>devByBrenda</h1>
+                <h1>&lt;dev&gt;ByBrenda</h1>
                 <nav>
                     <ul>
                         <li><a href='#about'>About</a></li>
@@ -39,28 +40,39 @@
         </section>
 
         <section id="work">
-            <div class='section work'>
+            <div class='section work slideshow-container'>
                 <h2>My Portfolio</h2>
-                <div class='portfolio project-1 grow'>
-                    <h3>Vision Board Project</h3>
-                    <h4>HTML &amp; CSS Exercise</h4>
-                    <a href="https://brenda-cw.github.io/bw-vision-board/" target="_blank"><img src='img/desktopVision.png' alt="Vision Board Website"/></a>
-                    <p> What started as an exercise to build a static page with a grid turned into a personal project to customize content and tranform the Vision Board into a responsive design. To see the original design, click here. </p>
+                <div class='portfolio project mySlides fade'>
+                    <div class="text">Vision Board Project</div>
+                    <figure>
+                        <a href="https://brenda-cw.github.io/bw-vision-board/" target="_blank"><img src='img/desktopVision.jpg' alt="Vision Board Website"/></a>
+                    </figure>
                 </div>
        
-                <div class='portfolio project-2 grow'>
-                    <h3>Rogue Pickings Project</h3>
-                    <h4>HTML &amp; CSS Exercise</h4>
-                    <a href="https://brenda-cw.github.io/rogue-pickings-responsive/" target="_blank"><img src='img/rogue-mockup.png' alt="Rogue Pickings Website"/></a>
-                    <p>Flexbox was key to setting up the layout for this responsive design. </p>
+                <div class='portfolio project mySlides fade'>
+                    <div class="text">Rogue Pickings Project</div>
+                    <figure>
+                        <a href="https://brenda-cw.github.io/rogue-pickings-responsive/" target="_blank"><img src='img/rogue-mockup.jpg' alt="Rogue Pickings Website"/></a>
+                    </figure>
                 </div>
 
-                <div class='portfolio project-3 grow'>
-                    <h3>Unplugged Website Project</h3>
-                    <h4>HTML 5 &amp; CSS Website from Photoshop Design Comp</h4>
-                    <a href="https://brenda-cw.github.io/unplugged-retreat/" target="_blank"><img src='img/desktopUnplugged.png' alt="Unplugged Website"/></a>
-                    <p>Using only a design comp, this multi-page site was coded from scratch.</p>
+                <div class='portfolio project mySlides fade'>
+                    <div class="text">Unplugged Website Project</div>
+                    <figure>
+                        <a href="https://brenda-cw.github.io/unplugged-retreat/" target="_blank"><img src='img/desktopUnplugged.jpg' alt="Unplugged Website"/></a>
+                    </figure>
                 </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
 
@@ -68,7 +80,9 @@
             <div class='section about'>
                 <h2>About Me</h2>
                 <div class='photo'>
-                    <img src='img/headshot2.jpg' alt="laughing headshot" />
+                    <figure>
+                        <img src='img/headshot2.jpg' alt="laughing headshot" />
+                    </figure>
                 </div>
                 <div class='about-me'>
                     <h3>I love making things work!</h3>
@@ -105,16 +119,15 @@
                 </div>
             </div>
         </section>
-    
-    </body>
 
-    <footer>
-        <div class='copyright'>
-            <p>
-                <i class='far fa-copyright' aria-hidden="true">
-                </i>
-                Copyright 2021 <span>|</span> <span class='logo'><a href='#header' style='color:#A989E0'>devByBrenda</a></span>
-            </p>
-        </div>
-    </footer>
+        <footer>
+            <div class='copyright'>
+                <p>
+                    <i class='far fa-copyright' aria-hidden="true">
+                    </i>
+                    Copyright 2021 <span>|</span> <span class='logo'><a href='#header' style='color:#A989E0'>&lt;dev&gt;ByBrenda</a></span>
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
