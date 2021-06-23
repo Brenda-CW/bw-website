@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         <script src="https://kit.fontawesome.com/b17f5d304d.js" crossorigin="anonymous"></script>
         <title>devByBrenda</title>
         <link rel='stylesheet' href='css/main.css'>
@@ -18,15 +20,28 @@
     </head>
     <body>
         <section id='header'>
-            <div class='section header'>
-                <h1>&lt;dev&gt;ByBrenda</h1>
+             <!--<div class='section header'>
+               <h1>&lt;dev&gt;ByBrenda</h1>
                 <nav>
                     <ul>
                         <li><a href='#about'>About</a></li>
                         <li><a href='#work'>Work</a></li>
                         <li><a href='#contact'>Contact</a></li>
                     </ul>
-                </nav>
+                </nav> -->
+                <!-- Top Navigation Menu -->
+            <div class="topnav" id="myTopnav">
+                <span class="logo">
+                    <a href="#home" class="active">&lt;dev&gt;ByBrenda</a>
+                </span>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
             </div>
         </section>
 
@@ -47,6 +62,18 @@
                     <figure>
                         <a href="https://brenda-cw.github.io/bw-vision-board/" target="_blank"><img src='img/desktopVision.jpg' alt="Vision Board Website"/></a>
                     </figure>
+                    <div class="description">
+                        <h4>Goal:</h4>
+                        <p>Use HTML & CSS to code a static website using a design comp.</p>
+
+                        <h4>Skills used:</h4>
+                        <p>HTML, CSS</p> 
+
+                        <h4>Responsive Version:</h4>
+                        <p>In this responsive version, I updated the content to personalize it for myself.  Additionally, I updated the code to a Mobile First design, added Flexbox and media queries to make it responsive for mobile, tablet and desktop.<br>
+                        <h4>Skills used:</h4> 
+                        <p>Mobile-first design, Flexbox, responsive images/typography, media queries</p>
+                    </div>
                 </div>
        
                 <div class='portfolio project mySlides fade'>
@@ -54,6 +81,13 @@
                     <figure>
                         <a href="https://brenda-cw.github.io/rogue-pickings-responsive/" target="_blank"><img src='img/rogue-mockup.jpg' alt="Rogue Pickings Website"/></a>
                     </figure>
+                    <div class="description">
+                        <h4>Goal:</h4>
+                        <p>Use Flexbox to adapt a static site responsive.  This project focused on taking an existing website that was designed statically for only desktop and update the code so it would respond to mobile and tablet device sizes. </p>
+
+                        <h4>Skills used:</h4>
+                        <p>CSS, Flexbox, responsive images/typography, media queries</p> 
+                    </div>
                 </div>
 
                 <div class='portfolio project mySlides fade'>
@@ -61,6 +95,15 @@
                     <figure>
                         <a href="https://brenda-cw.github.io/unplugged-retreat/" target="_blank"><img src='img/desktopUnplugged.jpg' alt="Unplugged Website"/></a>
                     </figure>
+                    <div class="description">
+                        <h4>Goal:</h4>
+                        <p>Using a prepared design comp, code the HTML and CSS for a 3-page, responsive website for a retreat targeting tech industry professionals needing a break to relax in nature.
+                        </p>
+
+                        <h4>Skills used:</h4>
+                        <p>HTML5, CSS, Flexbox, responsive images/typography, media queries
+                        </p> 
+                    </div>
                 </div>
 
                 <!-- Next and previous buttons -->
