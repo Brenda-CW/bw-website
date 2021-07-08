@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
   
+html {
+    font-size: 16px;
+}
+
   /*CHANGED TO TOPNAV FROM .HEADER  */
 .topnav {
     position: fixed;
@@ -14,7 +18,7 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: column nowrap;
-    padding: 15px;
+    padding: 65px 15px 15px;
     z-index: 2;
     background-color: #653BA8;
     width: 100%;
@@ -29,7 +33,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1em;
     background-color: #653ba8;
   }
   
@@ -51,18 +54,18 @@
 
   .topnav span.logo {
     font-family: 'Pacifico', cursive;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: normal;
     color: #D0B9F7;
 }
 
 .fa {
-    font-size: 1.75em;
+    font-size: 1.75rem;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;  
-    font-size: 16px;
+    font-size: 1rem;
     color: #fcfcfc;
     background-color: #653BA8;
 }
@@ -91,7 +94,7 @@ body {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: 28px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -115,7 +118,7 @@ body {
   /* Caption text */
   .text {
     color: #653BA8;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     padding: 20px 12px;
     /*
     bottom: 8px; */
@@ -170,7 +173,7 @@ body {
 /*---------------------------------------   MOBILE STYLES ----------------------------------------*/
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: bold;
 }
 
@@ -178,7 +181,7 @@ h2 {
     /*font-family: 'Oswald', sans-serif; */
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 15px 15px;
 }
@@ -187,14 +190,14 @@ h3 {
     /*font-family: 'Oswald', sans-serif; */
     font-family: 'Raleway', sans-serif;
     font-style: italic;
-    font-size: 1.375em;
+    font-size: 1.375rem;
     font-weight: 700;
     padding: 25px 10px;
 }
 
 h4 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: 700;
     padding: 5px 10px;
 }
@@ -212,7 +215,7 @@ a {
 }
 
 .location p {
-    line-height: 1.75em;
+    line-height: 1.75rem;
 }
 
 img {
@@ -227,7 +230,7 @@ figure {
 
 .header h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: normal;
     color: #d0b9f7;
     width: 100%;
@@ -249,7 +252,7 @@ figure {
 
 .header nav ul li {
     list-style: none;
-    line-height: 1.75em;
+    line-height: 1.75rem;
     padding: 6px;
     color: #fcfcfc; 
 }
@@ -271,7 +274,7 @@ figure {
 .hero h1 {
     /*font-family: 'Oswald', sans-serif; */
     font-family: 'Raleway', sans-serif;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: bold;
     padding: 140px 10px 0px 10px;
 }
@@ -283,7 +286,7 @@ figure {
 
 .work img {
    /* width: 83%; */
-    border-radius: 15px;
+    border-radius: 10px;
     /* box-shadow: 5px 5px #653BA8B3;  
     Removing due to slider setup*/
 }
@@ -375,12 +378,12 @@ opacity: 60%;
 }
 
   .copyright {
-    font-size: 0.875em;
+    font-size: 0.875rem;
 }
 
 footer span.logo {
     font-family: 'Pacifico', cursive;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: normal;
     color: #D0B9F7;
 }
@@ -396,8 +399,10 @@ footer span.logo {
  @media screen and (max-width: 1200px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-      float: right;
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-flow: column nowrap;
     }
   }
   
@@ -410,9 +415,10 @@ footer span.logo {
       top: 0;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-flow: column nowrap;
     }
   } 
 /*--------------------------------------   TABLET STYLES  ---------------------------------------------*/
@@ -424,7 +430,7 @@ footer span.logo {
     }
 
     .topnav a {
-        padding: 5px 10px;
+        padding: 15px;
     }
 
     .topnav span.logo {
@@ -558,7 +564,7 @@ footer span.logo {
     }
 
     .hero p {
-        font-size: 1.25em;
+        font-size: 1.25rem;
         padding-top: 10px;
         width: 40%;
     }
@@ -603,9 +609,8 @@ footer span.logo {
 
     /***************** ABOUT SECTION  ********************/
     figure {
-        margin: 0.375em;
-        float:left;
-        width: 40%;
+        margin: 0.375rem;
+        width: 80%;
     } /*This applies to About and Portfolio */
 
     .photo figure {
