@@ -170,7 +170,8 @@ body {
     to {opacity: 1}
   }
 
-/*---------------------------------------   MOBILE STYLES ----------------------------------------*/
+/*-------------------------------------------   MOBILE STYLES ------------------------------------------------*/
+/************************************************ HOME PAGE ******************************************/
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.25rem;
@@ -199,8 +200,7 @@ h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
-    padding: 5px 10px;
-}
+    padding: 20px 0px 10px 0px;}
 
 a {
     color:#fcfcfc;
@@ -259,7 +259,7 @@ figure {
 
 .filler {
     background-color: #653BA8;
-    height: 150px;
+    height: 250px;
 }
 
 .hero {
@@ -279,7 +279,8 @@ figure {
     padding: 140px 10px 0px 10px;
 }
 
-.work {
+.work, 
+.projects {
     background-color: #D0B9F7;
     padding: 15px 0;
 }
@@ -314,14 +315,6 @@ a {
     color: #36048c;
     margin: 35px;
     overflow: hidden;
-}
-
-.description {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: column;
-    text-align: center;
 }
 
 .portfolio p {
@@ -393,6 +386,47 @@ footer span.logo {
     color: #D0B9F7;
 }
 
+/******************************************** MOBILE - WORK PAGE **************************************************/
+    #portfolio {
+    margin: 25px 0px;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column;
+        }
+    
+    .project-desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    }
+    .title-border {
+        border:#653ba8 1px solid;
+        padding: 5px;
+        width: 90%;
+        margin: 25px 0px 15px 0px;
+    }
+
+    .work-desc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-desc img {
+        width: 90%;
+    }
+
+    .description {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: column;
+        width: 90%;
+    }
 
 /**************  MEDIA QUERIES FOR HAMBURGER MENU **********************/
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -421,7 +455,7 @@ footer span.logo {
       flex-flow: column nowrap;
     }
   } 
-/*--------------------------------------   TABLET STYLES  ---------------------------------------------*/
+/*------------------------------------------------------   TABLET STYLES  ---------------------------------------------*/
 @media only screen and (min-width: 768px) {
     
     .topnav {
@@ -519,8 +553,25 @@ footer span.logo {
     .social-icons {
         width: 35%;
     }
-}
 
+/************************************************** WORK PAGE - TABLET  **************************************************/
+    .projects {
+    display: flex;
+
+    }
+
+    .project-desc {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    }
+
+
+
+    .work-desc img{
+        width: 50%;
+    }
+}  /* CLOSE TO TABLET MEDIA QUERY */
 
 /*-------------------------------------------   DESKTOP STYLES ----------------------------------------------*/
 @media only screen and (min-width: 1200px){
@@ -579,7 +630,7 @@ footer span.logo {
     }
 
     .work h4 {
-        padding: 0 20px;
+        padding: 10 0px;
     }
 
     .work img {
@@ -638,4 +689,4 @@ footer span.logo {
         height: 185px;
     }
 
-}
+} /* CLOSE TO TABLET MEDIA QUERY */
