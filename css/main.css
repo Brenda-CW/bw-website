@@ -599,6 +599,11 @@ footer span.logo {
         color: #fcfcfc;
     }
     
+    /* NOT GOING TO USE BUT KEEPING FOR REFERENCE
+    a:visited {
+        color: #36048C;
+    } */
+
     a:hover {
         color:#D0B9F7;
     }  
@@ -708,4 +713,14 @@ footer span.logo {
         height: 185px;
     }
 
-} /* CLOSE TO TABLET MEDIA QUERY */
+    /************************************************** WORK PAGE - DESKTOP  **************************************************/
+
+    .project-desc {
+        margin: 20px 100px;
+    }
+
+
+
+
+
+} /* CLOSE TO DESKTOP MEDIA QUERY */
