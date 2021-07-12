@@ -418,6 +418,7 @@ footer span.logo {
 
     .work-desc img {
         width: 90%;
+        border-radius: 10px;
     }
 
     .description {
@@ -461,6 +462,7 @@ footer span.logo {
     .topnav {
         flex-flow: row nowrap;
         justify-content: space-around;
+        padding: 45px 15px 5px;
     }
 
     .topnav a {
@@ -481,6 +483,10 @@ footer span.logo {
         padding: 16px;
     }  
     */
+
+    .filler {
+    height: 140px;
+    }
 
     .hero h1 {
         padding: 245px 10px 5px 0px;
@@ -557,20 +563,33 @@ footer span.logo {
 /************************************************** WORK PAGE - TABLET  **************************************************/
     .projects {
     display: flex;
-
-    }
-
-    .project-desc {
-    display: flex;
     justify-content: center;
     flex-flow: row wrap;
     }
 
-
-
-    .work-desc img{
-        width: 50%;
+    .project-desc {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin: 20px;
     }
+
+    .project-desc figure {
+        display:flex;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .title-border {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .description {
+        width: 45%;
+    }
+
 }  /* CLOSE TO TABLET MEDIA QUERY */
 
 /*-------------------------------------------   DESKTOP STYLES ----------------------------------------------*/
