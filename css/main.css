@@ -52,7 +52,7 @@ html {
 
   .topnav span.logo {
     font-family: 'Pacifico', cursive;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: normal;
     color: #D0B9F7;
     align-self: flex-start;
@@ -60,6 +60,11 @@ html {
 
 .fa {
     font-size: 1.75rem;
+}
+
+.fab {
+    font-size: 3.5rem;
+    padding: 0px 15px;
 }
 
 body {
