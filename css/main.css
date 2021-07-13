@@ -95,10 +95,10 @@ body {
     top: 50%;
     width: auto;
     margin-top: 28px;
-    padding: 16px;
+    padding: 10px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -211,6 +211,7 @@ a {
 }
 
 .hero p {
+    font-size: 1.125em;
     font-weight: bolder;
 }
 
@@ -263,7 +264,7 @@ figure {
 }
 
 .hero {
-    background-image: url("../img/pineapple-supply-co-n_CvvktBf-Q-unsplash.jpg");
+    background-image: url("../img/pineapple-supply-co-n_CvvktBf-Q-unsplash-burn.jpg");
     background-size: cover;
     width: 100%;
     height: 395px;
@@ -484,6 +485,13 @@ footer span.logo {
         width: 75%;
     } */
 
+    .prev, .next {
+        margin-top: 18px;
+        padding: 25px;
+        font-size: 25px;
+    }
+
+
     .portfolio {
         display: flex;
         justify-content: flex-start;
@@ -623,6 +631,15 @@ footer span.logo {
         transform: scale(1.08);
     }
 
+    .topnav {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 25px 15px 5px;
+    }
+
+    .topnav a {
+        padding: 10px 0px 2px;
+    }
 
     .header h1 {
         text-align: left;
@@ -635,8 +652,13 @@ footer span.logo {
 
     }
 
+    .hero {
+        height: 615px;
+        padding: 0px;
+    }
+
     .hero h1 {
-    padding: 200px 10px 5px 0px;
+    padding: 420px 10px 5px 0px;
     }
 
     .hero p {
@@ -647,7 +669,6 @@ footer span.logo {
 
     .work {
        margin-top: 40px;
-       margin-bottom: 15px;
     } 
 
     .work h2 {
@@ -662,6 +683,10 @@ footer span.logo {
        /* width: 40%; */
         overflow: auto;
     } 
+
+    .prev, .next {
+        font-size: 45px;
+    }
 
     .portfolio {
         margin: 5px 60px; 
