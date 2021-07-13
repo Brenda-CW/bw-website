@@ -18,7 +18,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-flow: column nowrap;
-    padding: 65px 15px 15px;
+    padding: 15px 15px 15px;
     z-index: 2;
     background-color: #653BA8;
     width: 100%;
@@ -27,8 +27,6 @@ html {
 
   /* Style the links inside the navigation bar -LETS SEE IF WE CAN COVERT TO FLEX! */
   .topnav a {
-    float: left;
-    display: block;
     color: #D0B9F7;
     text-align: center;
     padding: 14px 16px;
@@ -41,11 +39,11 @@ html {
     color: #fcfcfc;
   }
   
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    /* background-color: #D0B9F7; */
+  /* Add an active class to highlight the current page 
+  .topnav a:active {
+    /* background-color: #D0B9F7; 
     color: #D0B9F7;
-  }
+  } */
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
@@ -54,9 +52,10 @@ html {
 
   .topnav span.logo {
     font-family: 'Pacifico', cursive;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: normal;
     color: #D0B9F7;
+    align-self: flex-start;
 }
 
 .fa {
@@ -83,6 +82,10 @@ body {
     overflow: hidden;
   }
   
+  .progress-bar {
+    height: 25px;
+  }
+
   /* Hide the images by default */
   .mySlides {
     display: none;
@@ -141,7 +144,7 @@ body {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 20px;
+    margin: 5px 20px;
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -207,7 +210,7 @@ a {
 }
 
 .hero span {
-    color:#653BA8;
+    color:#36048c;
 }
 
 .hero p {
@@ -260,7 +263,7 @@ figure {
 
 .filler {
     background-color: #653BA8;
-    height: 250px;
+    height: 50px;
 }
 
 .hero {
@@ -277,7 +280,8 @@ figure {
     font-family: 'Raleway', sans-serif;
     font-size: 2.25rem;
     font-weight: bold;
-    padding: 140px 10px 0px 10px;
+    padding: 160px 10px 0px 10px;
+    margin: 10px;
 }
 
 .work, 
@@ -445,8 +449,10 @@ footer span.logo {
     }
 
     .topnav span.logo {
+        font-size: 2.25rem;
         padding: 15px;
-        width: 50%
+        width: 50%;
+        align-self: center;
     }
 
     /*
@@ -460,7 +466,7 @@ footer span.logo {
     */
 
     .filler {
-    height: 140px;
+    height: 70px;
     }
 
     .hero h1 {
@@ -585,6 +591,9 @@ footer span.logo {
       justify-content: space-between;
       align-content: center;
       flex-flow: column nowrap;
+      position: fixed;
+      top: 0px;
+      right: 0px;
     }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
