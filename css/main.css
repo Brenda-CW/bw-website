@@ -11,6 +11,45 @@ html {
     font-size: 16px;
 }
 
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+h2 {
+    /*font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px 15px;
+}
+
+h3 {
+    /*font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding: 25px 10px;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 20px 0px 10px 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 1rem;
+    color: #fcfcfc;
+    background-color: #653BA8;
+}
+
   /*CHANGED TO TOPNAV FROM .HEADER  */
 .topnav {
     position: fixed;
@@ -25,8 +64,8 @@ html {
     overflow: hidden;
 }
 
-  /* Style the links inside the navigation bar -LETS SEE IF WE CAN COVERT TO FLEX! */
-  .topnav a {
+  /*.topnav a */
+  .purple-theme {
     color: #D0B9F7;
     text-align: center;
     padding: 14px 16px;
@@ -34,21 +73,11 @@ html {
     background-color: #653ba8;
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: #fcfcfc;
-  }
-  
   /* Add an active class to highlight the current page 
   .topnav a:active {
     /* background-color: #D0B9F7; 
     color: #D0B9F7;
   } */
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  } 
 
   .topnav span.logo {
     font-family: 'Pacifico', cursive;
@@ -58,6 +87,16 @@ html {
     align-self: flex-start;
 }
 
+ /* Hide the link that should open and close the topnav on small screens */
+ .topnav .icon {
+    display: none;
+  } 
+
+/* This makes the email and email links white rather than blue */
+a:link {
+    color: #fcfcfc;
+} 
+
 .fa {
     font-size: 1.75rem;
 }
@@ -65,13 +104,6 @@ html {
 .fab {
     font-size: 3.5rem;
     padding: 0px 15px;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 1rem;
-    color: #fcfcfc;
-    background-color: #653BA8;
 }
 
 .hide {
@@ -178,41 +210,35 @@ body {
     to {opacity: 1}
   }
     
+    /*************************************  FOOTER  *************************************/
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+    
+      .copyright {
+        font-size: 0.875rem;
+    }
+    
+    footer span.logo {
+        font-family: 'Pacifico', cursive;
+        font-size: 1.25rem;
+        font-weight: normal;
+        color: #D0B9F7;
+    }
+    
+    .fas, 
+    .fab {
+        color: #D0B9F7;
+    }
 /*-------------------------------------------   MOBILE STYLES ------------------------------------------------*/
 /************************************************ HOME PAGE ******************************************/
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.25rem;
-    font-weight: bold;
-}
 
-h2 {
-    /*font-family: 'Oswald', sans-serif; */
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 15px 15px;
-}
 
-h3 {
-    /*font-family: 'Oswald', sans-serif; */
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-size: 1.375rem;
-    font-weight: 700;
-    padding: 25px 10px;
-}
-
-h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-    padding: 20px 0px 10px 0px;}
-
-a {
+/*a {
     color:#fcfcfc;
-}
+}*/
 
 .hero span {
     color:#36048c;
@@ -234,8 +260,6 @@ img {
 figure {
         margin: 0;
 }
-
-
 
 .header h1 {
     font-family: 'Pacifico', cursive;
@@ -286,7 +310,7 @@ figure {
     font-size: 2.25rem;
     font-weight: bold;
     padding: 160px 10px 0px 10px;
-    margin: 10px;
+    margin: 10px 10px 5px;
 }
 
 .work, 
@@ -313,15 +337,6 @@ a {
 }
 
 .portfolio {
-   /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap; 
-    Removing because of slider styles 
-    text-align: center; 
-    border: 1px solid #653BA8;
-    border-radius: 8px;
-    background-color: #fcfcfc; */ 
     color: #36048c;
     margin: 35px;
     overflow: hidden;
@@ -343,9 +358,9 @@ a {
 }
 
 .photo img {
-width: 60%;
-border-radius: 15px;
-opacity: 60%;
+    width: 60%;
+    border-radius: 15px;
+    opacity: 60%;
 }
 
 .contact {
@@ -373,28 +388,7 @@ opacity: 60%;
     margin: 0 auto;
 }
 
-  /****************  FOOTER  ****************/
 
-  footer {
-    padding: 10px;
-    text-align: center;
-}
-
-  .copyright {
-    font-size: 0.875rem;
-}
-
-footer span.logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.25rem;
-    font-weight: normal;
-    color: #D0B9F7;
-}
-
-.fas, 
-.fab {
-    color: #D0B9F7;
-}
 
 /******************************************** MOBILE - WORK PAGE **************************************************/
     #portfolio {
@@ -439,14 +433,45 @@ footer span.logo {
         width: 90%;
     }
 
- 
+ /****************************** HAMBURGER MENU - MOBILE ONLY *********************************************/
+    /* When the screen is less than 767 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media only screen and (max-width: 767px) {
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      color: #D0b9f7;
+    }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .topnav.responsive a {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-flow: column nowrap;
+    }
+} /* CLOSE TO HAMBURGER MENU MEDIA QUERY */
 /*------------------------------------------------------   TABLET STYLES  ---------------------------------------------*/
 @media only screen and (min-width: 768px) {
     
     .topnav {
         flex-flow: row nowrap;
         justify-content: space-around;
-        padding: 45px 15px 5px;
+        padding: 35px 15px 5px;
     }
 
     .topnav a {
@@ -554,7 +579,11 @@ footer span.logo {
     }
 
  /************************************************** WORK PAGE - TABLET  **************************************************/
-    .projects {
+ #portfolio {
+     margin: 70px 0px;
+ }  
+ 
+ .projects {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -586,48 +615,23 @@ footer span.logo {
 }  /* CLOSE TO TABLET MEDIA QUERY */
 
 
-/****************************** HAMBURGER MENU *********************************************/
-    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media only screen and (max-width: 1200px) {
 
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      flex-flow: column nowrap;
-      position: fixed;
-      top: 0px;
-      right: 0px;
-    }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    .topnav.responsive {position: fixed;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      flex-flow: column nowrap;
-    }
-} /* CLOSE TO HAMBURGER MENU MEDIA QUERY */
 /*-------------------------------------------   DESKTOP STYLES ----------------------------------------------*/
 @media only screen and (min-width: 1200px){
 
-    a:link {
+      /* Change the color of top navigation links on hover*/
+    .topnav a:hover,
+    .topnav a:focus {
         color: #fcfcfc;
-    }
-    
+    } 
+
     /* NOT GOING TO USE BUT KEEPING FOR REFERENCE
     a:visited {
         color: #36048C;
     } */
 
-    a:hover {
+    /* Change the color of all other navigation links on hover*/
+    a:hover, a:focus {
         color:#D0B9F7;
     }  
     /* hover must come after link and active to be effective!  It only applies to non-touch-screen devices */
@@ -755,6 +759,9 @@ footer span.logo {
 
   
     /************************************************** WORK PAGE - DESKTOP  **************************************************/
+   .filler {
+       height: 50px;
+   }
 
     .project-desc {
         margin: 20px 100px;
