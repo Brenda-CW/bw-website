@@ -87,7 +87,7 @@ body {
     align-self: flex-start;
 }
 
- /* Hide the link that should open and close the topnav on small screens */
+ /* Hide the icon on Tablet & Desktop - on Mobile, will open and close the topnav menu */
  .topnav .icon {
     display: none;
   } 
@@ -463,6 +463,10 @@ a {
       justify-content: space-between;
       align-content: center;
       flex-flow: column nowrap;
+    }
+
+    .topnav.responsive.hide a.icon {
+        display:none;
     }
 } /* CLOSE TO HAMBURGER MENU MEDIA QUERY */
 /*------------------------------------------------------   TABLET STYLES  ---------------------------------------------*/

@@ -32,10 +32,15 @@ function showSlides(n) {
 /*******************    Script for hamburger menu  ****************/
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
     x.className += " responsive";
+  } else if (x.classList.contains('onToggle')){
+    x.classList.remove('hide');
+  } else if (x.classList.contains('offToggle')) {
+    x.classlist.add('hide');
   } else {
-    x.className = "topnav";
+    x.className = 'topnav';
   }
 } 
+
