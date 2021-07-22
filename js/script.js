@@ -1,3 +1,24 @@
+/*******************    Script for hamburger menu  ****************/
+const barIcon = document.querySelector(".topnav .fa-bars");
+const xIcon = document.querySelector(".topnav .fa-times");
+const menuIcon = document.querySelector(".topnav .icon");
+const mobileMenuItems = document.querySelector(".mobile-menu-items");
+
+// Show / Hide the mobile menu and alternate between the bars and 'x' icons
+menuIcon.addEventListener("click", () => {
+  if (mobileMenuItems.classList.contains("hide")){
+    mobileMenuItems.classList.remove("hide");
+    xIcon.classList.remove("hide");
+    barIcon.classList.add("hide");
+  } else {
+    mobileMenuItems.classList.add("hide");
+    xIcon.classList.add("hide");
+    barIcon.classList.remove("hide");
+  }
+})
+
+
+
 /******************************  Slider Script **************************/
 
 var slideIndex = 1;
@@ -27,20 +48,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-} 
-
-/*******************    Script for hamburger menu  ****************/
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById('myTopnav');
-  if (x.className === 'topnav') {
-    x.className += " responsive";
-  } else if (x.classList.contains('onToggle')){
-    x.classList.remove('hide');
-  } else if (x.classList.contains('offToggle')) {
-    x.classlist.add('hide');
-  } else {
-    x.className = 'topnav';
-  }
 } 
 
