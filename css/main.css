@@ -80,6 +80,7 @@ body {
 .topnav a {
   display: block;
 }
+
 .topnav a.icon {
   display: flex;
   justify-content: space-between;
@@ -359,7 +360,6 @@ figure {
 }
 
 a {
-  /* padding: 25px; - removing because it makes the images off-center */
   text-decoration: none;
 }
 
@@ -501,14 +501,6 @@ a {
     margin: 0 auto;
   }
 
-  /* .work {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column nowrap;
-    } 
-    Removing because slider container styles are in place*/
-
   /* .work img {
         width: 75%;
     } */
@@ -608,19 +600,17 @@ a {
 /*-------------------------------------------   DESKTOP STYLES ----------------------------------------------*/
 @media only screen and (min-width: 1200px) {
   /* Change the color of top navigation links on hover*/
-  .topnav a:hover,
-  .topnav a:focus {
+  .topnav a:hover{
     color: #fcfcfc;
-  }
+  } 
 
-  /* NOT GOING TO USE BUT KEEPING FOR REFERENCE
+  /* NOT GOING TO USE BUT KEEPING FOR REFERENCE 
     a:visited {
         color: #36048C;
     } */
 
   /* Change the color of all other navigation links on hover*/
-  a:hover,
-  a:focus {
+  a:hover {
     color: #d0b9f7;
   }
   /* hover must come after link and active to be effective!  It only applies to non-touch-screen devices */
@@ -642,10 +632,6 @@ a {
     flex-flow: row nowrap;
     justify-content: space-around;
     padding: 25px 15px 5px;
-  }
-
-  .topnav a {
-    padding: 10px 0px 2px;
   }
 
   .header h1 {
