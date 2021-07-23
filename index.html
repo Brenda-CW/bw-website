@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         <script src="https://kit.fontawesome.com/b17f5d304d.js" crossorigin="anonymous"></script>
@@ -31,11 +32,11 @@
                     </ul>
                 </nav> -->
                 <!-- Top Navigation Menu -->
-            <div class="topnav" id="myTopnav">
+            <div class="topnav" id="myTopnav">  <!-- NOT SURE IF THESE CLASSES WILL BE NEEDED -->
                 <span class="logo">
                     &lt;dev&gt;ByBrenda
                 </span>
-                <!--<a class='purple-theme' href='#home'>Home</a>-->
+                <!--PRIOR W3 HAMBURGER MENU 
                 <a class='purple-theme' href='#about'>About</a>
                 <a class='purple-theme' href='work/index.html' target='_blank'>Work</a>
                 <a class='purple-theme' href='#contact'>Contact</a>
@@ -43,10 +44,22 @@
                     Menu
                     <i class='fa fa-bars offToggle'></i>
                     <i class='fas fa-times hide onToggle'></i>
-                </a>
+                </a>  -->
+
+                <!--HAMBURGER ALTERNATE -->
+                <button class="ham">
+                    <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+                    <span class="menuIcon material-icons">menu</span>
+                    <span class="xIcon material-icons">close</span>
+                </button>
+                  <ul class="menu">
+                    <li><a class="menuLink purple-theme" href="#">Home</a></li>
+                    <li><a class="menuLink purple-theme" href="#about">About</a></li>
+                    <li><a class="menuLink purple-theme" href="work/index.html" target='_blank'>Work</a></li>
+                    <li><a class="menuLink purple-theme" href="contact/index.html">Contact</a></li>
+                  </ul>
             </div>
 
-            </div>
         </section>
 
         <div class="filler"></div>

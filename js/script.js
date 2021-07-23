@@ -29,8 +29,36 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 } 
 
-/*******************    Script for hamburger menu  ****************/
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/*******************    Script for hamburger menu  ************/
+/***ALTERNATE METHOD TO W3 SCHOOLS ****/
+
+var menu = document.querySelector(".menu");
+var ham = document.querySelector(".ham");
+var xIcon = document.querySelector(".xIcon");
+var menuIcon = document.querySelector(".menuIcon");
+
+ham.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+var menuLinks = document.querySelectorAll(".menuLink");
+
+menuLinks.forEach(function (menuLink) {
+  menuLink.addEventListener("click", toggleMenu);
+});
+
+
+/* PRIOR W3 CODE - Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
 function myFunction() {
   var x = document.getElementById('myTopnav');
   if (x.className === 'topnav') {
@@ -42,5 +70,5 @@ function myFunction() {
   } else {
     x.className = 'topnav';
   }
-} 
+}  */
 

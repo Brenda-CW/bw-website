@@ -50,28 +50,82 @@ body {
     background-color: #653BA8;
 }
 
-  /*CHANGED TO TOPNAV FROM .HEADER  */
-.topnav {
+/***************** ALTERNATE HAMBURGER MENU ****************/
+.ham {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column nowrap;
-    padding: 15px 15px 15px;
-    z-index: 2;
-    background-color: #653BA8;
-    width: 100%;
-    overflow: hidden;
-}
-
-  /*.topnav a */
-  .purple-theme {
-    color: #D0B9F7;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #653ba8;
+    z-index: 5; /* number is arbitrary - could be 10, 50, 100 - keeps the hamburger button above everything */
+    top: 1rem;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border: black solid 1px; 
+    background: white;
+    cursor: pointer;
   }
+  
+  .xIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+  
+  li {
+    padding: 1rem 0;
+  }
+  
+  .menuLink {
+    display: inline;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+
+  /**************** END OF ALTERNATE HAMBURGER MENU ***************/
+    .purple-theme {
+        color: #D0B9F7;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: #653ba8;
+    }
+
+
+    .topnav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 15px 15px 15px;
+        z-index: 2;
+        background-color: #653BA8;
+        width: 100%;
+        overflow: hidden;
+    }
+
+  /*.topnav a 
+  USED THIS TO SET PURPLE THEME*/
+  
   
   /* Add an active class to highlight the current page 
   .topnav a:active {
@@ -79,18 +133,16 @@ body {
     color: #D0B9F7;
   } */
 
-  .topnav span.logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.75rem;
-    font-weight: normal;
-    color: #D0B9F7;
-    align-self: flex-start;
-}
 
- /* Hide the icon on Tablet & Desktop - on Mobile, will open and close the topnav menu */
- .topnav .icon {
-    display: none;
-  } 
+    .topnav span.logo {
+        font-family: 'Pacifico', cursive;
+        font-size: 1.75rem;
+        font-weight: normal;
+        color: #D0B9F7;
+        align-self: flex-start;
+    }
+
+
 
 /* This makes the email and email links white rather than blue */
 a:link {
@@ -437,6 +489,8 @@ a {
     /* When the screen is less than 767 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media only screen and (max-width: 767px) {
 
+
+    /****  PRIOR W3 HAMBURBER MENU CODE ******    
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       display: flex;
@@ -450,7 +504,7 @@ a {
       color: #D0b9f7;
     }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
     .topnav.responsive {position: fixed;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -467,18 +521,34 @@ a {
 
     .topnav.responsive.hide a.icon {
         display:none;
-    }
+    }  *****/
 } /* CLOSE TO HAMBURGER MENU MEDIA QUERY */
 /*------------------------------------------------------   TABLET STYLES  ---------------------------------------------*/
 @media only screen and (min-width: 768px) {
-    
+
+    .ham {
+        display:none;
+    }
+
+
+      
+     .menuIcon, .xIcon {
+        display: none;
+    }
+        
+    .menu {
+        transform: translateY(0);
+        transition:none;
+        height:auto;
+    }
+
     .topnav {
         flex-flow: row nowrap;
         justify-content: space-around;
         padding: 35px 15px 5px;
     }
 
-    .topnav a {
+    .menuLink {
         padding: 15px;
     }
 
@@ -487,7 +557,7 @@ a {
         padding: 15px;
         width: 50%;
         align-self: center;
-    }
+    }  
 
     /*
     header nav ul {
@@ -497,7 +567,7 @@ a {
     .header nav ul li {
         padding: 16px;
     }  
-    */
+*/
 
     .filler {
     height: 70px;
@@ -624,11 +694,17 @@ a {
 @media only screen and (min-width: 1200px){
 
       /* Change the color of top navigation links on hover*/
-    .topnav a:hover,
-    .topnav a:focus {
+    .menu a:hover,
+    .menu a:focus {
         color: #fcfcfc;
     } 
 
+      /****  ALTERNATE HAMBURBER MENU CODE **********/
+    .menuLink:hover {
+        text-decoration: underline;
+        color: red;
+    }
+        /****  END OF ALTERNATE HAMBURBER MENU CODE **********/
     /* NOT GOING TO USE BUT KEEPING FOR REFERENCE
     a:visited {
         color: #36048C;
@@ -659,7 +735,7 @@ a {
         padding: 25px 15px 5px;
     }
 
-    .topnav a {
+    .menuLink {
         padding: 10px 0px 2px;
     }
 
