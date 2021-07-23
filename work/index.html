@@ -21,32 +21,31 @@
     </head>
     <body>
         <section id='header'>
-             <!--<div class='section header'>
-               <h1>&lt;dev&gt;ByBrenda</h1>
-                <nav>
-                    <ul>
-                        <li><a href='#about'>About</a></li>
-                        <li><a href='#work'>Work</a></li>
-                        <li><a href='#contact'>Contact</a></li>
-                    </ul>
-                </nav> -->
-                <!-- Top Navigation Menu -->
             <div class="topnav" id="myTopnav">
                 <span class="logo">
-                    &lt;dev&gt;ByBrenda</a>
+                    &lt;dev&gt;ByBrenda
                 </span>
-                <a class='purple-theme' href="../index.html">Home</a>
-                <a class='purple-theme' href="../index.html#about">About</a>
-                <!--<a href="#work">Work</a>  -->
-                <a class='purple-theme' href="../index.html#contact">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!--<a class='purple-theme' href='#home'>Home</a>-->
+                <div class="mobile-menu-items hide">
+                    <a class='purple-theme' href="../index.html">Home</a>
+                    <a class='purple-theme' href='../index.html#about'>About</a>
+                    <a class='purple-theme' href='../index.html#contact'>Contact</a>
+                </div>
+                <div class="non-mobile-menu-items">
+                    <a class='purple-theme' href="../index.html">Home</a>
+                    <a class='purple-theme' href='../index.html#about'>About</a>
+                    <a class='purple-theme' href='../index.html#contact'>Contact</a>
+                </div>
+                <a href='#' class='icon'>
                     Menu
-                    <i class="fa fa-bars"></i>
+                    <i class='fa fa-bars offToggle'></i>
+                    <i class='fas fa-times hide onToggle'></i>
                 </a>
             </div>
 
-            </div>
         </section>
+
+
 
         <div class="filler"></div>
         
