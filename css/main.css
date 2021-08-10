@@ -405,6 +405,11 @@ a {
   padding-bottom: 15px;
 }
 
+.hire-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .social-icons {
   display: flex;
   justify-content: space-around;
@@ -558,6 +563,10 @@ a {
     text-align: left;
   }
 
+  .hire-content {
+    width: 60%;
+  }
+
   .social-icons {
     width: 35%;
   }
@@ -702,17 +711,34 @@ a {
   }
 
   /***************** ABOUT SECTION  ********************/
+  
+  .about {
+    justify-content: space-around;
+    padding: 80px;
+  }
+
   figure {
     margin: 0.375rem;
     width: 80%;
   } /*This applies to About and Portfolio */
 
+  /*about .photo {
+    width: 47%;
+  } */
+
   .photo figure {
-    width: 75%;
+    width: 100%;
   }
 
-  .photo img {
+  /*.photo img {
     width: 50%;
+  }  */
+
+
+  .about .about-me {
+    width: 63%;
+    text-align: left;
+    padding-right: 60px;
   }
 
   /****************** CONTACT SECTION  *****************/
@@ -734,6 +760,9 @@ a {
     height: 185px;
   }
 
+  .hire-content {
+    width: 60%;
+  }
   /************************************************** WORK PAGE - DESKTOP  **************************************************/
   .filler {
     height: 50px;
